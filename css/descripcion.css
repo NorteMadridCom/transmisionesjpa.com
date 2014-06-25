@@ -1,0 +1,47 @@
+#descripcion{
+	padding: 20px 0px 40px 20px;
+}
+#img_descripcion{
+	width: 500px;
+}
+
+#izquierda{
+	float: left;
+	width: 480px;
+	margin-right: 20px;
+}
+
+#derecha{
+	float: right;
+	width: 480px;
+}
+
+p.descripcion{
+	margin-bottom: 50px;
+}
+
+a.pdf{
+	height: 20px;
+	color: #fff;
+	padding: 10px;
+	font-size: 13px;
+	
+	float: right;
+	background-color: #CE0706;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+}
+
+a.link{
+	height: 20px;
+	color: #333;
+	font-size: 13px;
+	border: solid 1px #C4C4C4;
+	padding: 10px;
+	float: left;
+	background-color: #Ccc;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+}

@@ -1,0 +1,53 @@
+ul.menu_productos
+{
+   list-style:none;
+   background-color: #222222;
+   width: 240px;
+   text-align: right;
+   /*border: solid 1px #FFCC00;*/
+   color: #FFCC00;
+   line-height: 30px;
+   padding: 2px;
+}
+ul.menu_productos li
+{
+   position:relative; /* Las coordenadas de los ul inferiores ser�n relativas al <li> que los contiene */
+   width: 240px;
+   word-wrap: break-word; 
+}
+ul.menu_productos ul /* Para todos los ul debajo del ul.menu */
+{
+	position: absolute; /* Esta posici�n es relativa al <li> que contiene a este <ul> */
+   left: 242px; /* Para que no monte sobre el <li>, distancia del submenu con su menu, ha der ser del ancho del ul.menu, se le suma el padding */ 
+   top: -3px; /* el borde +  el paddind, */
+   display: none;
+   list-style: none;
+   border: solid 1px #FFCC00;
+} 
+/* Esto afecta a todos los ul inmediatamente debajo (el > ) de un li que a su vez est� dentro de un ul.menu */
+ul.menu_productos li:hover > ul
+{
+   display: block;
+}
+a.menu_productos,a.menu_productos:visited
+{
+	color: #FFCC00;
+	padding-right: 5px;
+}
+a.menu_productos:hover
+{
+	color: black;
+	background-color: #FFCC00;
+	display: block;
+}
+a.menu_productos_fin,a.menu_productos_fin:visited
+{
+	color: #FFCC00;
+	padding-right: 16px;
+}
+a.menu_productos_fin:hover
+{
+	color: black;
+	background-color: #FFCC00;
+	display: block;
+}

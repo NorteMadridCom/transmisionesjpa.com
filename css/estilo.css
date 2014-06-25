@@ -1,0 +1,263 @@
+body{
+	font-family: Verdana;
+	color: #BBBBBB;
+	margin: 0px;
+	background-color: #202020;
+}
+
+a{
+	font-family: Verdana;
+	text-decoration: none;
+}
+/*
+header{
+	position:fixed;
+	width: 100%;
+}*/
+
+#gris{
+	background-color: #F3F3F3;
+	background-image: url('../images/fondo.png');
+	background-repeat: repeat;
+}
+
+#contenedor_central{
+	width: 1000px;
+	margin: 0px auto;
+	display: block;
+	
+}
+
+#centrador{
+	width: 1000px;
+	margin: 0px auto;
+}
+	
+	
+/*CABECERA*/
+#left{
+	float: left;	
+}
+
+#right{
+	float: right;	
+}
+
+
+a.logo{
+	margin-top: 5px;
+}
+	
+#menu_cabecera{
+	display: block;
+	margin: 5px 0px 0px 10px;
+	color: #FFCC00;
+	height: 30px;
+	padding-top: 32px;
+	font-family: Verdana;
+	float: left;
+}
+	
+a.titulos_menu_cabecera{
+	color: #fff;
+	padding: 15px 10px 10px 10px;
+	display: block;
+	float: left;
+	height: 25px;
+	width: 120px;
+	margin-left: 10px;
+	text-align: center;
+	background-color: #FFCC00;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: background;
+  -moz-transition-duration: 1s;
+  -moz-transition-timing-function: ease;
+}
+
+a.titulos_menu_cabecera:hover{
+	background-color: #000000;
+}
+
+/*buscador*/
+#buscador{
+	display: block;
+	margin: 10px 0px 0px 10px;
+	
+}
+
+input.buscar{
+	margin-left: 240px;
+	border: solid 1px #ccc;
+	padding-left: 5px;
+	font-size: 12px;
+	width: 350px;
+	height: 20px;
+	background-color: #fff;
+}
+
+button.lupa{
+	margin-top: -20px;
+	float: right;
+	margin-left: 580px;
+	background-color: #fff;
+	border: 0;
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	background-image: url('../images/lupa.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+	
+/*CONTENIDO*/
+#navegador{
+	width: 960px;
+	margin-left: 25px;
+	margin-right: 20px;
+	padding-bottom: 5px;
+	max-height: 20px;
+}
+
+a.navegador{
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: -1px;
+	text-decoration: none; 
+	text-align: center;
+	margin-left: -5px;
+	color: #999;
+	background-color: #F3F3F3;	
+	padding: 5px 10px 5px 20px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+}
+
+#navegador a:hover{
+	color: #666;
+		
+}
+
+#flecha{
+	margin-top: -1px;
+	margin-left: -5px;
+	margin-right: -25px;
+	float: left;
+	z-index: 999px;
+	left: -5px;
+	background-image: url('../images/flecha.png');
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+	/*/////////*/
+
+	
+p{
+	color: #666;
+	font-size: 15px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+
+#fondo_empresa{
+	padding-top: 20px;
+	background-image: url('../images/index.png');
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 523px;
+}
+
+/*CUADROS IMG PRODUCTOS*/
+#cuadros{
+	background-color: #fff;
+	float: left;
+	border: solid 1px #EAEAEA;
+	width: 210px;
+	height: 200px;
+	margin-right: 10px;
+	margin-bottom: 45px;
+	text-align: center;
+	margin-left: 15px;
+	padding-left: 10px;
+	display: block;
+	
+}
+
+a.cuadros{
+	color: #ccc;
+}
+
+#esquina{
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 29px;
+	position: absolute;
+	margin-left: -10px;
+}
+
+#titulo{
+	margin-top: 20px;
+	font-family: verdana;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	width: 220px;
+	height: 30px;
+	margin-left: -10px;
+	padding-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	background-color: #333;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+}
+
+img.img{
+	margin-top: 30px;
+	opacity: 1;
+}
+
+#img{
+	height: 150px;
+}
+
+#catalogo{
+	margin: 20px 30px 20px 0px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 14px;
+}
+
+/*representadas
+#representadas{
+	background-color: #fff;
+	float: left;
+	height: 25px;
+	width: 150px;
+	margin: 0px 5px 0px 5px;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+}*/
+
+#cuadros_re{
+	background-color: #fff;
+	float: left;
+	border: solid 1px #EAEAEA;
+	width: 160px;
+	height: 80px;
+	margin-right: 10px;
+	margin-bottom: 45px;
+	text-align: center;
+	margin-left: 15px;
+	padding-left: 10px;
+	display: block;
+	
+}

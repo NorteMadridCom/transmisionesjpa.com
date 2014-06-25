@@ -1,0 +1,42 @@
+footer{
+	height: 162px;
+	background-color: #202020;
+	margin: 0px auto 0px auto;
+	padding-left: 15px;
+	padding-top: 45px;
+	text-align: center;
+	clear: both;
+	color: #666666;
+}
+
+
+#footer{
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	font-family: Arial;
+	color: #444444;
+}
+
+
+#prg_norte_madrid{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial;
+	clear: both;
+	color: #444444;
+	padding-top: 30px;
+}
+	
+a.linknortemadrid{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #666666;
+}
+	
+a.linknortemadrid:hover{
+		text-decoration: underline;
+		
+}
