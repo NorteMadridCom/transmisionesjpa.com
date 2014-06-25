@@ -45,3 +45,21 @@ a.link{
 	-moz-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
 	box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
 }
+
+a.pdf_caja{
+	height: 20px;
+	color: #fff;
+	padding: 10px;
+	font-size: 13px;
+	
+	background-color: #CE0706;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+	box-shadow: 0px 1px 5px 0px rgba(117,117,117,0.5);
+}
+
+#pdf_caja{
+	margin-left: 15px;
+	padding-bottom: 10px;
+}

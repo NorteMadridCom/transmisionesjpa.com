@@ -17,7 +17,6 @@
 			
 			<div id="derecha">
 			
-			
 			<a class="pdf" href="#">Descargar PDF &raquo</a>
 			
 			

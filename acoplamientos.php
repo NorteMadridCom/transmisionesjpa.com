@@ -1,7 +1,4 @@
-
 </div></div>
-
-
 
 
 <div style="width: 100%; min-width: 320px; max-width: 1000px; margin: 0 auto;">
@@ -32,9 +29,10 @@
 		</div>
 		
 		
-	
 		<a href="index.php?seccion=productos&parte=dentados" class="cuadros">
+			
 			<div id="cuadros">
+				
 				<div id="img"><img src="images/catalogo/acoplam-dentado-peq.png" class="img" width="100"/></div>
 				<div id="titulo">Dentados &raquo</div>
 			</div>
