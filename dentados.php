@@ -1,11 +1,12 @@
 </div></div>
 
 <div style="width: 100%; min-width: 320px; max-width: 1000px; margin: 0 auto;">
+	<h1>Dentados</h1>
 <div id="descripcion">
 			
 			<div id="izquierda">
 			<div id="img_descripcion">
-				<img src="images/productos2.png" width="450" />
+				<img src="images/tapper.png" width="450" />
 			</div>
 			</div>
 			

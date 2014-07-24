@@ -3,6 +3,8 @@
 
 <div style="width: 100%; min-width: 320px; max-width: 1000px; margin: 0 auto;">
 	
+	<h1>Acoplamientos</h1>
+	
 		<div id="descripcion">
 			
 			<div id="izquierda">
@@ -10,6 +12,8 @@
 				<img src="images/productos2.png" width="450" />
 			</div>
 			</div>
+			
+			
 			
 			<p class="descripcion">
 				Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,

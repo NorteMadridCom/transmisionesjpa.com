@@ -1,16 +1,13 @@
 </div></div>
 
-
 <div style="width: 100%; min-width: 320px; max-width: 1000px; margin: 0 auto;">
-	
-		<div id="descripcion">
+<div id="descripcion">
 			
 			<div id="izquierda">
 			<div id="img_descripcion">
 				<img src="images/productos2.png" width="450" />
 			</div>
 			</div>
-			
 			
 			<p class="descripcion">
 				Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
@@ -20,39 +17,12 @@
 			
 			<div id="derecha">
 			
-			<a class="link" href="#">Planos 2D/3D &raquo</a>
-			
 			<a class="pdf" href="#">Descargar PDF &raquo</a>
 			
 			
 			</div>
 			<div style="clear: both;"></div>
 		</div>
-		
-		
-		<a href="index.php?seccion=productos&parte=dentados" class="cuadros">
-			
-			<div id="cuadros">
-				
-				<div id="img"><img src="images/catalogo/acoplam-dentado-peq.png" class="img" width="100"/></div>
-				<div id="titulo">No Autocentrantes &raquo</div>
-			</div>
-		</a>
-		
-		<a href="index.php?seccion=productos&parte=elasticos" class="cuadros">
-			<div id="cuadros">
-				<div id="img"><img src="images/catalogo/acoplamientos_serie_lf_lovejoy.png" class="img"/></div>
-				<div id="titulo">Autocentrantes &raquo</div>
-			</div>
-		</a>
-		
-		<a href="#" class="cuadros">
-			<div id="cuadros">
-				<div id="img"><img src="images/catalogo/acoplamientos_limitadores_par_juego_0.png" class="img"  width="160"/></div>
-				<div id="titulo">Bujes Conex &raquo</div>
-			</div>
-		</a>
-		
-		
-		
-<div style="clear: both;"></div>
+
+</div>
+</div>
