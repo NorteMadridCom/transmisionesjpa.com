@@ -1,0 +1,27 @@
+DESCRIPCION
+
+index.php: 	con una Get, hacemos a que parte vamos de la página mediante require 'parte.php'
+
+catalogo.php:	require catalogo_nuevo.php que es el objeto del catálogo
+
+catalogo_nuevo.php:	require caja.php que contiene las cajas de los menús
+
+
+
+PENDIENTE
+
+Hacer url amigables
+
+
+
+
+ACTUAL
+
+poner fabricantes es la presentacion de productos. hay un problema porque me coge los tipos....
+
+
+DISEÑO
+
+falla cuando no tenemos una imagen del producto, en un prinicio no le damos importancia debido a q colocamos una imagen por defecto
+
+el selector fabricantes/categorias dentro del catalogo.
