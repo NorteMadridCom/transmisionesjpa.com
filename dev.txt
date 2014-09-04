@@ -17,8 +17,8 @@ Hacer url amigables
 
 ACTUAL
 
-poner fabricantes es la presentacion de productos. hay un problema porque me coge los tipos....
-
+Poner las url amigables (index.php) + poner urlencode/decode
+CON PATH en los css para que los coja en index.php
 
 DISEÑO
 

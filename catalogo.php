@@ -1,6 +1,6 @@
 <?php
 
-require 'mostrar_catalogo.php';
+//require 'mostrar_catalogo.php';
 require 'menu_productos.php';
 require 'catalogo_nuevo.php';
 ?>
@@ -10,10 +10,10 @@ require 'catalogo_nuevo.php';
 <?php
 
 if ($_GET['seccion']!="productos") {
-	echo '<a href="?seccion=productos" class="titulos_menu_cabecera">Visulizar los catálogos por categorias</a><br>';
+	echo '<a href="'.PATH.'seccion/productos/" class="titulos_menu_cabecera">Visulizar los catálogos por categorias</a><br>';
 	$menu='fabricantes';
 } else {
-	echo '<a href="?seccion=fabricantes" class="titulos_menu_cabecera">Visulizar los catálogos por Marcas</a><br>';
+	echo '<a href="'.PATH.'seccion/fabricantes/" class="titulos_menu_cabecera">Visulizar los catálogos por Marcas</a><br>';
 	$menu='familias';
 }
 

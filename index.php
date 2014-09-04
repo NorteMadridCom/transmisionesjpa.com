@@ -1,5 +1,5 @@
 <?php
-
+define('PATH','http://'.$_SERVER['SERVER_NAME']. '/');
 require_once 'includes/conexion.php';
 require_once 'includes/class.phpmailer.php';
 require_once 'includes/class.smtp.php';
@@ -17,11 +17,11 @@ $descripcion=$seo->descripcion();
 	<head>
 		<title><?php echo $titulo; ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
-		<link rel="stylesheet" type="text/css" href="css/menu_productos.css" />
-		<link rel="stylesheet" type="text/css" href="css/descripcion.css" />
-		<link rel="stylesheet" type="text/css" href="css/contacto.css" />
-		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo PATH; ?>css/estilo.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo PATH; ?>css/menu_productos.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo PATH; ?>css/descripcion.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo PATH; ?>css/contacto.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo PATH; ?>css/footer.css" />
 		<meta name="Robots" content="All">
 		<meta http-equiv="content-language" content="es">
 		<meta name="keywords" content="reductores, reductor, motores, motor, guias lineales, guia lineal, cadenas, cadena, reductores de precision, reductor de precision, acoplaminetos, acoplamiento, correas, correa, pi�ones, pi�on, bujes de fijacion, buje de fijacion, engranajes, engranaje, cremalleras, cremallera, husillos, husillo, gatos mecanicos, gato mecanico, convertidores frecuencia, convertidor frecuencia, actuadores lineales, actuador lineal, limitadores de par, limitador de par, varmec, tramec, reggiana reduttori, apex dynamic, nabtesco, trasmil, graessner, hiwin, mecvel, vmh herion, jakob, hydro-mec, thomson, zimm, eltra"/>
@@ -47,13 +47,13 @@ $descripcion=$seo->descripcion();
 
 		<!--- ORBIT --->
 		<!-- Attach our CSS-->
-		<link rel="stylesheet" href="orbit/css/orbit-1.2.3.css">
+		<link rel="stylesheet" href="<?php echo PATH; ?>orbit/css/orbit-1.2.3.css">
 		<!--<link rel="stylesheet" href="orbit/css/orbit-1.3.0.css">-->
 
 		<!-- Attach necessary JS -->
-		<script type="text/javascript" src="orbit/js/jquery-1.5.1.min.js"></script>
-		<script type="text/javascript" src="orbit/js/jquery.orbit-1.3.0.js"></script>
-		<link rel="stylesheet" href="orbit/css/mobile.css">
+		<script type="text/javascript" src="<?php echo PATH; ?>orbit/js/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo PATH; ?>orbit/js/jquery.orbit-1.3.0.js"></script>
+		<link rel="stylesheet" href="<?php echo PATH; ?>orbit/css/mobile.css">
 
 		<!--[if IE]>
 		<style type="text/css">
@@ -98,13 +98,13 @@ $descripcion=$seo->descripcion();
 
 					<div id="left">
 
-						<a href="index.php" class="logo"><img src="images/logo.png" /></a>
+						<a href="<?php echo PATH; ?>index.php" class="logo"><img src="<?php echo PATH; ?>images/logo.png" /></a>
 					</div>
 
 					<div id="right" style="background-color: #fff;">
 
 						<div id="buscador">
-							<form enctype="multipart/formdata" method="post" action="index.php?seccion=buscar">
+							<form enctype="multipart/formdata" method="post" action="/seccion/buscar/">
 								<input class="buscar" type="text" placeholder="Buscar..." required="" value="" name="buscar_txt">
 								</input>
 								<div id="lupa">
@@ -115,10 +115,10 @@ $descripcion=$seo->descripcion();
 						</div>
 
 						<div id="menu_cabecera">
-							<a href="?seccion=empresa" class="titulos_menu_cabecera">Empresa</a>
-							<a href="?seccion=productos" class="titulos_menu_cabecera">Productos</a>
-							<a href="?seccion=representadas" class="titulos_menu_cabecera">Representadas</a>
-							<a href="?seccion=contacto" class="titulos_menu_cabecera">Contacto</a>
+							<a href="/seccion/empresa/" class="titulos_menu_cabecera">Empresa</a>
+							<a href="/seccion/productos/" class="titulos_menu_cabecera">Productos</a>
+							<a href="/seccion/representadas/" class="titulos_menu_cabecera">Representadas</a>
+							<a href="/seccion/contacto/" class="titulos_menu_cabecera">Contacto</a>
 						</div>
 
 					</div>
@@ -139,41 +139,37 @@ $descripcion=$seo->descripcion();
 
 			<?php
 
-			$cadena_links = "index.php";
+			$cadena_links = PATH;
 			$cadena_navegacion = '<a href="' . $cadena_links . '" class="navegador">Transmisiones JPA</a>';
-			$comodin = "<div id='flecha'> <img src='images/flecha.png'></div>";
-			//$matriz_navegacion[0] = $cadena_navegacion;
+			$comodin = "<div id='flecha'> <img src='".PATH."images/flecha.png'></div>";
 
 			if ($_GET['seccion']) {
-				$cadena_links .= '?seccion=' . $_GET['seccion'];
+				$cadena_links .= 'seccion/' . urlencode($_GET['seccion']) .'/';
 				$cadena_navegacion .= $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['seccion']) . '</a>';
-				//$matriz_navegacion[1] = $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['seccion']) . '</a>';
 
 				if ($_GET['familia']) {
-					$cadena_links .= '&familia=' . $_GET['familia'];
+					$cadena_links .= urlencode( $_GET['familia'] ) .'/';
 					$cadena_navegacion .= $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['familia']) . '</a>';
-					//$matriz_navegacion[2] = $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($fam) . '</a>';
-
+					
 					if (isset($_GET['tipo'])) {
-						$cadena_links .= '&tipo=' . $_GET['tipo'];
+						$cadena_links .= urlencode( $_GET['tipo']).'/' ;
 						if($_GET['tipo']) $cadena_navegacion .= $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['tipo']).'</a>';
 
 						if (isset($_GET['clase'])) {
-							$cadena_links .= '&clase=' . $_GET['clase'];
+							$cadena_links .= urlencode( $_GET['clase']) . "/" ;
 							if($_GET['clase']) $cadena_navegacion .= $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['clase']) . '</a>';
-							//$matriz_navegacion[3] = $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($tipo) . '</a>';
-							//$cadena_navegacion = $matriz_navegacion[0] . $matriz_navegacion[1] . $matriz_navegacion[2] . $matriz_navegacion[3];
+						
 							if($_GET['catalogo']) {
-								$cadena_links .= '&catalogo=' . $_GET['catalogo'];
+								$cadena_links .= urlencode( $_GET['catalogo'] ) ."/" ;
 								$cadena_navegacion .= $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['catalogo']).'</a>';
 							}
 						}
 					}
 				} elseif ($_GET['fabricante']) {
-					$cadena_links .= '&fabricante=' . $_GET['fabricante'];
+					$cadena_links .= 'fabricante/' . urlencode( $_GET['fabricante'] ) . "/" ;
 					$cadena_navegacion .= $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['fabricante']) . '</a>';
 					if($_GET['catalogo']) {
-						$cadena_links .= '&catalogo=' . $_GET['catalogo'];
+						$cadena_links .= urlencode( $_GET['catalogo'] ) . "/" ;
 						$cadena_navegacion .= $comodin . '<a href="' . $cadena_links . '"  class="navegador">' . ucwords($_GET['catalogo']).'</a>';
 					}
 				}

@@ -6,7 +6,7 @@
 			
 		<div id="izquierda">
 			<div id="img_descripcion">
-				<img src="images/catalogo/<?php echo $imagen; ?>" alt="<?php echo $this->_cata->registros[0]->$campo; ?>" width="450" />
+				<img src="<?php echo PATH; ?>images/catalogo/<?php echo $imagen; ?>" alt="<?php echo $this->_cata->registros[0]->$campo; ?>" width="450" />
 			</div>
 		</div>
 
@@ -15,8 +15,8 @@
 		</p>
 		
 		<div id="derecha">	
-			<?php if($this->_cata->registros[0]->planos) { ?><a class="link" href="#">Planos 2D/3D &raquo</a><?php } ?>
-			<?php if($this->_cata->registros[0]->documento) { ?><a class="pdf" href="#">Descargar PDF &raquo</a><?php } ?>
+			<?php if($this->_cata->registros[0]->planos) { ?><a class="link" href="<?php echo $this->_cata->registros[0]->planos; ?>">Planos 2D/3D &raquo</a><?php } ?>
+			<?php if($this->_cata->registros[0]->documento) { ?><a class="pdf" href="<?php echo $this->_cata->registros[0]->documento; ?>">Descargar PDF &raquo</a><?php } ?>
 		</div>
 		
 		<div style="clear: both;"></div>

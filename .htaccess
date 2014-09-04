@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^seccion/fabricantes/(.+)/(.+)/ index.php?seccion=fabricantes&fabricante=$1&catalogo=$2
+RewriteRule ^seccion/fabricantes/(.+)/ index.php?seccion=fabricantes&fabricante=$1
+RewriteRule ^seccion/productos/(.+)/(.+)/(.+)/(.+)/$ index.php?seccion=productos&familia=$1&tipo=$2&clase=$3&catalogo=$4
+RewriteRule ^seccion/productos/(.+)/(.+)/(.+)/$ index.php?seccion=productos&familia=$1&tipo=$2&clase=$3
+RewriteRule ^seccion/productos/(.+)/(.+)/$ index.php?seccion=productos&familia=$1&tipo=$2
+RewriteRule ^seccion/productos/(.+)/$ index.php?seccion=productos&familia=$1
+RewriteRule ^seccion/(.+)/$ index.php?seccion=$1
+</IfModule>

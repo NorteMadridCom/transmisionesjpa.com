@@ -46,7 +46,7 @@ function formulario_mail($datos)
 	
 	<div  style="padding: 20px 0px 40px 0px;">
 		<div style="float: left;   display: block; ">
-			<form method="post" enctype="multipart/form-data" action="'.$_SERVER['REQUEST_URI'].'">
+			<form method="post" enctype="multipart/form-data" action="">
 				<table class="contacto">
 					
 					<tr>
@@ -149,12 +149,12 @@ if($_POST['accion']=='enviar')
 	    }
 	    if(!$exito)
 	    {
-	        	echo '<p class="aviso_contacto">Problemas enviando correo electr�nico.';
+	        	echo '<p class="aviso_contacto">Problemas enviando correo electrónico.';
 	    		echo "<br />".$mail->ErrorInfo."</p>";	
 	    }
 	    else
 	    {
-	        echo '<p class="aviso_contacto">Correo electr�nico enviado correctamente.</p>';
+	        echo '<p class="aviso_contacto">Correo electrónico enviado correctamente.</p>';
 				unset($_POST);
 	    }		
 		

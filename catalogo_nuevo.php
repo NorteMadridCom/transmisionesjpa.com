@@ -18,47 +18,7 @@ class Catalogo
 	{
 		$this->_cata=new Mysql;
 	}
-	/*
-	private function _fabricante($fabricante)
-	{
-		urldecode($fabricante);
-		$sql="SELECT * FROM fabricantes WHERE fabricante='$fabricante' AND eliminado=0;";
-	}
-	
-	private function _catalogo($catalogo)
-	{
-		$catalogo=urldecode($catalogo);
-		$sql="SELECT * FROM catalogos WHERE catalogo='$catalogo' AND eliminado=0;";
-	}
-	
-	private function _clase($clase,$idtipo=FALSE)
-	{
-		$clase=urldecode($clase);
-		if($idtipo) $this->_sql="
-			SELECT ca.* 
-			FROM catalogos ca, tipos t, clases c 
-			WHERE ca.idclase=c.idclase AND c.idtipo=t.idtipo AND ca.eliminado=0 AND c.eliminado=0 AND t.eliminado=0;";
-		else $this->_sql="SELECT *, clase as cero FROM clases WHERE clase='$clase' AND eliminado=0;";
-	}
-	
-	private function _tipo($tipo,$idfamilia=FALSE)
-	{
-		$tipo=urldecode($tipo);
-		if($idfamilia) $sql="
-			SELECT ca.* 
-			FROM catalogos ca, familias f, tipos t, clases c 
-			WHERE ca.idclase=c.idclase AND c.idtipo=t.idtipo AND t.idfamilia=f.idfamilia AND ca.eliminado=0 AND c.eliminado=0 AND t.eliminado=0;";
-		else $sql="SELECT *, tipo as cero FROM tipos WHERE tipo='$tipo' AND eliminado=0;";
-		$this->_cata->ejecutar_consulta($sql);
-		if($this->_cata->numero_registros==1) {
-			if($this->_cata->registros[0]->cero=="0") $this->_tipo('0',$id);
-			else {
-				require 'ficha.php';
-				$this->_tipo($this->_cata->registros[0]->cero);
-			}
-		}
-	}
-	*/
+
 	private function _tabla($tabla)
 	{
 		$tablas=array('familias','tipos','clases','catalogos');
@@ -92,7 +52,7 @@ class Catalogo
 		if($this->_cata->registros[0]->cero=="0") {
 			//tiene que llamarse a si mismo pero con el otro nomrbe del siquiente	
 			$filtro="AND $id={$this->_cata->registros[0]->id}";
-			$this->_url .= "&$menu=0";
+			$this->_url .= "0/";
 			if($this->_tabla($tabla)) $this->menu($this->_tabla($tabla),$filtro);
 		} elseif($this->_cata->numero_registros>0) { // o es cero o es una opción valida.
 			foreach ($this->_cata->registros as $val) {
